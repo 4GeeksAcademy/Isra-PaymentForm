@@ -24,22 +24,12 @@
                 Some fields are missing
               </div>
               <form action="#" id="form1">
-                <!-- LINEA LABEL CARD // CV // AMOUNT -->
+                <!-- LINEA  CARD // CV // AMOUNT -->
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-sm-12 col-lg-4">
+                    <!-- LABEL CARD -->
                     <label for="creditCardNumber">Card #</label>
-                  </div>
-                  <div class="col-4">
-                    <label for="cvc">CVC #</label>
-                  </div>
-                  <div class="col-4">
-                    <label for="cash">Amount</label>
-                  </div>
-                </div>
-                <!-- LINEA INPUT CARD // CV // AMOUNT -->
-
-                <div class="row my-2">
-                  <div class="col-4">
+                    <!-- INPUT CARD -->
                     <input
                       id="creditCardNumber"
                       name="creditCardNumber"
@@ -51,7 +41,10 @@
                       required
                     />
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm-12 col-lg-4">
+                    <!-- LABEL CN -->
+                    <label for="cvc">CVC #</label>
+                    <!-- INPUT CV -->
                     <input
                       id="cvc"
                       name="cvc"
@@ -63,30 +56,30 @@
                       required
                     />
                   </div>
-                  <div class="col-4 d-flex align-items-center">
-                    $
-                    <input
-                      type="text"
-                      id="cash"
-                      name="cash"
-                      class="form-control ms-1"
-                      placeholder="Amount"
-                      required
-                    />
+                  <div class="col-sm-12 col-lg-4">
+                    <!-- LABEL CASH -->
+                    <label for="cash">Amount</label>
+                    <!-- INPUT CASH -->
+                    <div class="d-flex align-items-center">
+                      $
+                      <input
+                        type="text"
+                        id="cash"
+                        name="cash"
+                        class="form-control ms-1"
+                        placeholder="Amount"
+                        required
+                      />
+                    </div>
                   </div>
                 </div>
-                <!-- FILA LABEL FIRST NAME // LAST NAME -->
+
+                <!-- FILA  FIRST NAME // LAST NAME -->
                 <div class="row my-2">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-lg-6">
+                    <!-- LABEL FIRST NAME -->
                     <label for="fname">First name</label>
-                  </div>
-                  <div class="col-6">
-                    <label for="lname">Last Name</label>
-                  </div>
-                </div>
-                <!-- FILA INPUT FIRST NAME // LAST NAME -->
-                <div class="row my-2">
-                  <div class="col-6">
+                    <!-- INPUT FIRST NAME -->
                     <input
                       type="text"
                       id="fname"
@@ -96,7 +89,10 @@
                       required
                     />
                   </div>
-                  <div class="col-6">
+                  <div class="col-sm-12 col-lg-6">
+                    <!-- LABEL LAST NAME -->
+                    <label for="lname">Last Name</label>
+                    <!-- INPUT LAST NAME -->
                     <input
                       type="text"
                       id="lname"
@@ -110,20 +106,10 @@
 
                 <!-- FILA LABEL CITY // STATE// POSTAL CODE -->
                 <div class="row my-2">
-                  <div class="col-6">
+                  <div class="col-sm-12 col-lg-6">
+                    <!-- LABEL CITY -->
                     <label for="city">City</label>
-                  </div>
-                  <div class="col-3">
-                    <label for="state">State</label>
-                  </div>
-                  <div class="col-3">
-                    <label for="CP">Postal Code</label>
-                  </div>
-                </div>
-
-                <!-- FILA INPUT CITY // STATE// POSTAL CODE -->
-                <div class="row my-2">
-                  <div class="col-6">
+                    <!-- INPUT CITY -->
                     <input
                       type="text"
                       name="city"
@@ -133,7 +119,10 @@
                       required
                     />
                   </div>
-                  <div class="col-3">
+                  <div class="col-sm-6 col-lg-3">
+                    <!-- LABEL STATE -->
+                    <label for="state">State</label>
+                    <!-- STATE BAR -->
                     <select
                       name="state"
                       id="state"
@@ -148,7 +137,10 @@
                       <option value="Argentina">Argentina</option>
                     </select>
                   </div>
-                  <div class="col-3">
+                  <div class="col-sm-6 col-lg-3">
+                    <!-- LABEL POSTAL CODE -->
+                    <label for="CP">Postal Code</label>
+                    <!-- INPUT POSTAL CODE -->
                     <input
                       type="text"
                       name="CP"
@@ -162,19 +154,12 @@
 
                 <!-- FILA LABEL WE ACCEPT // MESSAGE/-->
                 <div class="row my-2">
-                  <div class="col-6">
+                  <div class="col-sm-6 col-lg-3">
+                    <!-- LABEL WE ACEPT -->
                     <label for="city">We accept</label>
-                  </div>
-                  <div class="col-6">
-                    <label for="state">Message</label>
-                  </div>
-                </div>
-                <!-- FILA INPUT WE ACCEPT // MESSAGE/-->
-
-                <div class="row my-2">
-                  <div class="col-6 py-3">
+                    <!-- INPUT WE ACEPT -->
                     <div
-                      class="creditcards px-2 py-2 rounded bg-secondary d-flex justify-content-between w-50"
+                      class="creditcards px-2 py-2 rounded bg-secondary d-flex justify-content-between"
                     >
                       <input
                         type="radio"
@@ -220,7 +205,12 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-6">
+
+                  <div class="col-sm-12 col-md-6 col-lg-3"></div>
+                  <div class="col-sm-12 col-lg-6">
+                    <!-- LABEL MESSAGE -->
+                    <label for="city">We accept</label>
+                    <!-- INPUT MESSAGE -->
                     <textarea
                       name="message"
                       id="message"
